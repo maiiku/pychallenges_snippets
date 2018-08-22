@@ -1,0 +1,114 @@
+########
+# Python
+########
+*.py[co]
+
+#######
+# Emacs
+#######
+*.*~
+
+######
+# OS X
+######
+*.DS_Store
+
+#########
+# PyCharm
+#########
+.idea/
+
+#####
+# Vim
+#####
+*.swp
+
+###################
+# Translation files
+###################
+*.po
+*.mo
+mv_poland/locale/
+mv_poland/vikingpl/locale/
+.sparkyclient.log
+translations_root/locale/
+
+###################
+# Ignore the local.py file and test.py file
+###################
+mv_poland/mv_poland/settings/local*.py
+mv_poland/mv_poland/settings/vars/local*
+mv_poland/.elasticbeanstalk/
+!mv_poland/.elasticbeanstalk/config.yml
+mv_poland/.env_vars/
+frontend/.eslintrc
+
+#########
+# Compass
+#########
+.sass-cache
+
+################
+# Compiled files
+################
+mv_poland/vikingpl/static/vikingpl/css/core.css
+mv_poland/vikingpl/static/vikingpl/css/blog.css
+mv_poland/vikingpl/static/vikingpl/js/core.js
+mv_poland/vikingpl/static/vikingpl/sass/core.css
+_static
+
+#########
+# Eclipse?
+#########
+.project
+
+###########################
+# Dont't add the celerybeat
+###########################
+celerybeat-schedule
+
+#################
+# Financial files
+#################
+financial_files
+
+##########
+# Coverage
+##########
+.coverage
+coverage_link/
+
+#############
+# Media files
+#############
+media
+
+
+## some custom scripts
+mv_poland/start_local_server.sh
+
+# Vagrant
+.vagrant
+
+# rabbit_tester
+mv_poland/ftest_data/Firefox/
+mv_poland/dump.rdb
+mv_poland/tester.ini
+
+# dev
+mv_poland/celerybeat-schedule.db
+mv_poland/debug.log
+mv_poland/app.out.celery.log
+mv_poland/app.out.django.log
+
+# guard
+Gemfile.lock
+node_modules
+frontend/dist
+mv_poland/.webpack-stats*
+npm-debug.log
+
+.envs
+_django
+.env
+
